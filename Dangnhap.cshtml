@@ -8,39 +8,186 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Đăng nhập</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhaijaan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
     
     
 </head>
+
 <body>
-    <div class="blue-rectangle"></div>
-    <style>
-        .blue-rectangle {
-            position: absolute;
-            top: -2px;
-            left: 0px;
-            width: 1440px; 
-            height: 80px; 
-            background-color: dodgerblue;
-        }
-    </style>   
+    <div class="head"></div>
     <div class="logo">       
         <img src="https://i.pinimg.com/564x/a1/ee/3c/a1ee3c1da870638d388c629dd8ef1ba7.jpg" , alt="ảnh đại diện" , width="92px" , height="98px" />     
     </div>
-    <style>
-        .logo{
-            position: absolute;
-            top: 84px;
-            left: 40px;
-        }
-
-    </style>
-    <h1>
-        mVonlunteer
-        position: absolute;
-        top: 84px;
-        left: 40px;
-    </h1>
-
-   
+    <div class="ten"> mVolunteer</div>
+    <div class="trangchu">Trang chủ</div>
+    <div class="gioithieu">Giới thiệu </div>
+    <div class=" img">
+        <img src="https://i.pinimg.com/564x/8d/ff/49/8dff49985d0d8afa53751d9ba8907aed.jpg?fbclid=IwZXh0bgNhZW0CMTAAAR1xPQUaOXKPVdo01yi_A2gELGTZlm_bTu1uoJNGyaDEhB3oAVtYo2zVWN0_aem_AQIIBxbM5LyKtiBEh-qeCxRG7eGY54v262_icU_SS9ccbxhbMX3N3Y-jiPPmxozXapUSs8Y5KaSZqyfFDaXn6tGq" width="674.31px" height="710.91px" />
+    </div>
+    <div class="Dangnhap1"> Đăng nhập </div>
+    <div class=" Vaitro">Vai trò</div>
+    @model Vaitro
+    <select asp-for="Selected" class="VT">
+        <option value="">-- Chọn vai trò --</option>
+        <option value="Canhan">Cá nhân</option>
+        <option value="Tochuc">Tổ chức</option>
+        <option value="QTV">Quản trị viên</option>
+    </select>
+    <div class="TDN"> 
+        Tên đăng nhập:    </div>
+    <input type="text" class="TDNh" name="TDN">
+    <div class="Matkhau">
+        Mật khẩu:
+    </div>
+    <input type="text" class="MK" name="MK">
+    <div class="QMK"> Quên mật khẩu</div>
+    <div class="DN"></div>
+    <div class="Dangnhap2">Đăng nhập</div>
+    <div class="Chuacotk"> Bạn chưa có tài khoản. Đăng ký ngay !!</div>
 </body>
 </html>
+<style>
+    .head {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 1440px;
+        height: 143px;
+        background-color: #A1D5F7;
+    }
+
+    .logo {
+        position: absolute;
+        top: 6px;
+        left: 60px;
+    }
+
+    .ten {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        font-size: 35px;
+        color: #000000;
+        font-family: Jockey One;
+    }
+
+    .trangchu {
+        position: absolute;
+        top: 54px;
+        left: 1051px;
+        font-size: 30px;
+        color: #000000;
+        font-weight: normal;
+    }
+
+    .gioithieu {
+        position: absolute;
+        top: 52px;
+        left: 1253px;
+        font-size: 30px;
+        color: #000000;
+        font-weight: normal;
+    }
+    .Dangnhap1{
+        position: absolute;
+        top: 201px;
+        left: 992px;
+        font-size: 48px;
+        color: #000000;
+        font-family: Baloo;
+    }
+    .Vaitro{
+        position: absolute;
+        top: 339px;
+        left: 744px;
+        font-size: 36px;
+        color: #000000;
+        font-family: Baloo;
+    }
+    .VT{
+        position: absolute;
+        top: 330px;
+        left: 1029px;
+        width: 362px;
+        height: 65px;
+        font-size: 30px ;
+        color: #000000;
+        font-family: Baloo;
+    }
+    .TDN{
+        position: absolute;
+        top: 462px;
+        left: 744px;
+        font-size: 36px;
+        color: #000000;
+        font-family: Baloo;       
+    }
+    .TDNh{
+        position: absolute;
+        top: 458px;
+        left: 1029px;
+        width:362px;
+        height:65px;
+        font-size:30px
+        color: #000000;
+        font-family: Baloo;
+    }
+
+    .Matkhau {
+        position: absolute;
+        top: 590px;
+        left: 744px;
+        font-size: 36px;
+        color: #000000;
+        font-family: Baloo;
+    }
+
+    .MK {
+        position: absolute;
+        top: 582px;
+        left: 1029px;
+        width: 362px;
+        height: 65px;
+        font-size: 30px color: #000000;
+        font-family: Baloo;
+    }
+    .img{
+        position: absolute;
+        top: 168px;
+        left: 22px;
+    }
+    .QMK{
+        position: absolute;
+        top: 672px;
+        left: 1246px;
+        font-size: 24px;
+        color: #000000;
+        font-family: Baloo Bhaijaan;
+    }
+    .DN{
+        position: absolute;
+        top: 738px;
+        left: 1029px;
+        width: 362px;
+        height: 65px;
+        background-color: #0358B2;
+    }
+    .Dangnhap2{
+        position: absolute;
+        top: 742px;
+        left: 1140px;
+        font-size: 36px;
+        color: #000000;
+        font-family: Baloo;
+    }
+    .Chuacotk{
+        position: absolute;
+        top: 828px;
+        left: 895px;
+        font-size: 24px;
+        color: #000000;
+        font-family: Baloo;
+    }
+</style>
